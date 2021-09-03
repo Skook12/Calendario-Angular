@@ -1,0 +1,48 @@
+<div class="container-fluid  h-100">
+  <div class="row h-100">
+    <div class="col-md-3 h-100 text-center" style="background-color:red;">
+
+      <div class="card bg-danger rounded mt-5">
+        <div class="card-header">
+          <h5 class="text-white">local do titulo do calendario</h5>
+        </div>
+      </div>
+
+      <div class="card bg-white rounded mt-1">
+        <div class="card-body " style="min-height:400px">
+          <h5 class="text-white">local do  calendario</h5>
+        </div>
+      </div>
+      <span *ngFor="let item of projetoList">
+        <app-newcomponent [projeto]="item"></app-newcomponent>
+      </span>
+
+    </div>
+
+    
+    <div class="col-md-9  flex-fill"  >
+
+      <div class="row" style="height:5%" >
+        <div class="col-md-9 text-left" style="background-color:yellow;">
+          <h2 class="text-black">Hoje&nbsp;</h2>
+        </div>
+        <div class="col-md-3 text-right" style="background-color:green;">
+          <h5 class="text-white">Luciano Santos</h5>
+        </div>
+      </div>
+      <div class="row" style="height : 95%" >
+        <div class="col-md-4 text-center " style="background-color:gray;">
+          <h5 class="text-white">COLUNA 1</h5>
+        </div>
+        <div class="col-md-4 text-center "  style="background-color:blue;">
+          <h5 class="text-white">COLUNA 2</h5>
+        </div>
+        <div class="col-md-4 text-center " style="background-color:black;">
+          <h5 class="text-white">COLUNA 3</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
