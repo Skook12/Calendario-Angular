@@ -1,3 +1,37 @@
-html.body{
-    height: 100%;
-}
+html,body{
+    height:100%;
+  }
+  
+  
+  body .bs-datepicker-container .bs-datepicker-head{
+    background-color:red;
+  }
+  body .bs-datepicker-container .bs-datepicker-head * {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .bs-datepicker-container {
+    padding: 0px;
+    margin:0 px;
+    width: 100% !important;
+  
+  }
+  
+  bs-datepicker-inline-container{
+    width: 100% !important;
+  }
+  
+  bs-days-calendar-view {
+    width: 100% !important;
+  }
+  
+  .bs-datepicker-body{
+    width: 100% !important;
+  }
+  
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";

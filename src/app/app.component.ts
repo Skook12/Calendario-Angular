@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tarefas';
+  bsInlineValue = new Date();
   projetoList = [
     { id: 1, descricao: 'Projeto BI', qtd_tarefas: 12, subtitulo: 'Construcao Bi Zorro'},
     { id: 2, descricao: 'Projeto BI 2', qtd_tarefas: 12, subtitulo: 'Construcao Bi Zorro'},
