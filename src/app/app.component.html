@@ -35,18 +35,40 @@
           <h5 class="text-white">Luciano Santos</h5>
         </div>
       </div>
-      <div class="row" style="height : 95%" >
-        <div class="col-md-4 text-center " style="background-color:gray;">
-          <h5 class="text-white">COLUNA 1</h5>
+    
+        <div class="row  "  style="background-color:aliceblue;height:95%;">
+          <div class="col-md-4 text-center ">
+            <div class="col-md-12 bg-white h-100 mt-3">
+              <div class="row">
+                <div class="col">
+                  <div class="text-primary text-left titulotarefa">New Request</div>
+                <div class="col-md-12" *ngFor="let item of tarefaList">
+                  <app-componenterefa [tarefa]="item"></app-componenterefa>
+                </div>
+   
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center ">
+            <div class="col-md-12 bg-white h-100 mt-3">
+              <div class="row">
+                <div class="col">
+                  <div class="text-primary text-left titulotarefa">In progress</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center ">
+            <div class="col-md-12 bg-white h-100 mt-3">
+              <div class="row">
+                <div class="col">
+                  <div class="text-primary text-left titulotarefa">Complete</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 text-center "  style="background-color:blue;">
-          <h5 class="text-white">COLUNA 2</h5>
-        </div>
-        <div class="col-md-4 text-center " style="background-color:black;">
-          <h5 class="text-white">COLUNA 3</h5>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 <router-outlet></router-outlet>
